@@ -1,26 +1,32 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div>
+		<el-result icon="error" title="use the 'sub-title'">
+			<template #sub-title>
+				This is the second level heading
+			</template>
+			<template #extra>
+				<el-button type="primary" size="medium">返回</el-button>
+			</template>
+		</el-result>
+
+		<el-result icon="success" title="use the 'subTitle'">
+			<template #subTitle>
+				This is the second level heading
+			</template>
+			<template #extra>
+				<el-button type="primary" size="medium">返回</el-button>
+			</template>
+		</el-result>
+	</div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
 
 export default {
   name: 'App',
-  components: {
-    HelloWorld
-  }
 }
 </script>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+
 </style>
